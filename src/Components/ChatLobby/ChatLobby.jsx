@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-const socket = io('http://localhost:3005');
+const socket = io('https://soketchat-server.herokuapp.com/');
 
 const ChatLobby = ({ isLogged, setIsLogged }) => {
   const [chatMessages, setChatMessages] = useState();
